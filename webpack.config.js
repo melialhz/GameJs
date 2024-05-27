@@ -18,4 +18,8 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js'],
   },
+  devServer: {
+    static: path.join(__dirname, "dist"),
+    compress: true,
+  },
 };
