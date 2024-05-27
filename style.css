@@ -1,0 +1,19 @@
+* {
+  font-family: "Gill Sans", sans-serif;
+}
+
+body {
+  background-color: #0c5e69;
+}
+
+.light body {
+  background-color: white;
+}
+
+.main-title, .score {
+  color: white;
+}
+
+.light .main-title, .light .score {
+  color: black;
+}

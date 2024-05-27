@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=annie-use-your-telescope:400" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css">
+    <title>Puzzle Game</title>
+</head>
+<body>
+    <main>
+        <div class="ml-3 mt-2">
+            <!-- Toggle Mode -->
+            <input id="mode-toggle" type="checkbox" class="hidden" />
+            <label for="mode-toggle" class="cursor-pointer">
+                <div class="relative">
+                <div class="block bg-gray-200 w-14 h-8 rounded-full"></div>
+                <div class="dot absolute left-1 top-1 bg-black w-6 h-6 rounded-full transition"></div>
+                </div>
+            </label>
+        </div>
+        <!-- Titre principal -->
+        <h1 class="text-5xl text-center mt-10 mb-5 main-title">Welcome to your Puzzle Game</h1>
+        <!-- Score -->
+        <h1 class="text-5xl text-center score">Your Score : <span id="score">0</span></h1>
+        <!-- Grille du puzzle -->
+        <div class="max-w-5xl mx-auto">
+            <div class="grid grid-cols-5 gap-4 mt-24">
+                <!-- Les pièces du puzzle seront ajoutées ici dynamiquement -->
+            </div>
+        </div>
+    </main>
+</body>
+</html>
